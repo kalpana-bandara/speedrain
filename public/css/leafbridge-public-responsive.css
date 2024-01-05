@@ -1,0 +1,1093 @@
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .show_category_products_based_on_retailer
+    .wizard_prods_inner
+    .wizard_prods_view
+    .wizard_product_section
+    .wizard_category_products_showcase {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .leafbridge_special_products_wrapper
+    .leafbridge_special_products_inner
+    .leafbridge_specials_tab_wrapper
+    .specials_tab_content
+    .specials_tab_content_inner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .wizard_prods_inner
+    .wizard_prods_view
+    .wizard_product_section
+    .wizard_category_products_showcase {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1025px) {
+  .open_cat_close,
+  .class_toggle_category {
+    display: none;
+  }
+  #specials_tab_filter_background{
+    display: none; 
+  }
+}
+@media (max-width: 1024px) {
+  #specials_tab_filter_background{
+    background: rgb(0 0 0 / 39%);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    transition: ease-in-out 0.25s all;
+  }
+  #specials_tab_filter_background.open_cats{
+    left: 0;
+  } 
+  .specials_tab_filter {
+    position: fixed;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 50%);
+    transition: cubic-bezier(0.42, 0, 0.04, 1) 0.45s all;
+  }
+  .specials_tab_filter.open_cats {
+    left: 0;
+  }
+  .specials_tab_filter_inner {
+    height: 100%;
+    max-height: 60vh;
+    overflow-y: scroll;
+    margin-top: 30px;
+  }
+  .leafbridge_special_products_wrapper
+    .leafbridge_special_products_inner
+    .leafbridge_specials_tab_wrapper
+    .specials_tab_content {
+    display: inline-grid;
+    width: 100%;
+    min-height: auto;
+    padding-top: 40px;
+    position: relative;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    align-items: start;
+  }
+  .leafbridge_special_products_wrapper
+    .leafbridge_special_products_inner
+    .leafbridge_specials_tab_wrapper
+    .specials_tabs_new {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wizard_prods_inner
+    .wizard_prods_view
+    .wizard_product_section
+    .wizard_category_products_pagination {
+    padding-top: 20px;
+    display: inline-block;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .wizard_prods_inner
+    .wizard_prods_view
+    .wizard_product_section
+    .wizard_category_products_pagination
+    #pagination_text {
+    margin-bottom: 0px;
+    padding: 10px;
+  }
+
+  .floating_cart_wrapper
+    .floating_cart_inner
+    .floating_cart_container
+    .floating_cart_items_wrapper
+    .floating_cart_items_inner {
+    max-height: 40vh;
+    overflow-y: scroll;
+    min-height: 40vh;
+  }
+
+  #leafbridge_shop_wizard_reset_selection_confirm .wizard_box {
+    width: 100%;
+  }
+
+  .class_toggle_category.open_cat_close {
+    position: ABSOLUTE;
+    top: 15px;
+    right: 27px;
+    font-size: 25px;
+    margin: 0px;
+  }
+
+  .class_toggle_category {
+    display: inline-flex;
+    align-items: center;
+    float: left;
+    gap: 20px;
+
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .wizard_prods_inner .wizard_prods_view .wizard_product_section .wizard_category_products_showcase {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .wizard_prods_inner {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+  }
+  .wizard_prods_inner .wizard_prods_categories {
+    position: fixed;
+    top: 50%;
+    z-index: 99;
+    width: 60%;
+    background: white;
+    transform: translateY(-50%);
+    left: -100%;
+    right: auto;
+    padding: 30px;
+    padding-left: 10vw;
+    transition: cubic-bezier(0.42, 0, 0, 1) 0.5s all;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 20%);
+  }
+  .wizard_prods_inner .wizard_prods_categories.open_cats {
+    left: 0;
+  }
+
+  .wizard_prods_inner .wizard_prods_categories ul#prods_categories {
+    max-height: 60vh;
+    overflow-y: scroll;
+    margin-left: 0;
+  }
+  .wizard_prods_inner .wizard_prods_categories ul#prods_categories li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .leafbridge_product_modal_outer .leafbridge_product_modal {
+    width: 100%;
+    max-width: 70vw;
+    grid-template-columns: 1fr;
+  }
+  .leafbridge_product_modal_outer
+    .leafbridge_product_modal
+    .leafbridge_product_modal_image
+    img {
+    width: 50vh;
+    height: 20vh;
+    padding: 0;
+  }
+  .leafbridge_product_modal_outer
+    .leafbridge_product_modal
+    .leafbridge_product_modal_descr {
+    background: white;
+    padding: 0px 30px 30px 30px;
+  }
+  .leafbridge_product_descr {
+    max-height: 15vh;
+    overflow-y: scroll;
+  }
+  .leafbridge_product_modal_descr_inner {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    max-height: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .leafbridge_popup_box {
+    max-width: 80vw;
+    min-width: 80vw;
+  }
+  .lb_prod_single_grid {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  .show_category_products_based_on_retailer
+    .wizard_prods_inner
+    .wizard_prods_view
+    .wizard_product_section
+    .wizard_category_products_showcase {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .lb_product_categories_wrapper .lb_product_categories_inner {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .lb_search_products {
+    margin-top: 50px;
+  }
+
+  .lb_category_single_section_wrapper {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+  }
+  .lb_category_single_section_wrapper .lb_categories_list * {
+    transition: ease-in-out 0.25s all;
+  }
+  .lb_category_single_section_wrapper .lb_categories_list p i {
+    display: inline-block;
+    transform: rotate(0deg);
+  }
+  .lb_category_single_section_wrapper .lb_categories_list ul {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .lb_category_single_section_wrapper .lb_categories_list.expand_list p i {
+    transform: rotate(180deg);
+  }
+  .lb_category_single_section_wrapper .lb_categories_list.expand_list ul {
+    max-height: 1000px;
+    margin-bottom: 15px;
+  }
+  .leafbridge_special_products_wrapper
+    .leafbridge_special_products_inner
+    .leafbridge_specials_tab_wrapper
+    .specials_tabs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .leafbridge_special_products_wrapper
+    .leafbridge_special_products_inner
+    .leafbridge_specials_tab_wrapper
+    .specials_tab_content
+    .specials_tab_content_inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #wizard_sort_wrapper h1 {
+    margin: 0;
+    font-size: 30px;
+    font-family: inherit;
+  }
+
+  .leafbridge_specific_product_filter_wrapper
+    .lb_specific_prods_slider_wrapper
+    .lb_specific_prods_slider_inner
+    .leafbridge_product_card {
+    min-width: auto;
+    max-width: none;
+  }
+
+  .leafbridge_product_modal {
+    grid-template-columns: 1fr;
+    max-width: 95vw;
+    max-height: 80vh;
+  }
+  .leafbridge_product_modal .leafbridge_product_modal_descr {
+    background: white;
+    padding: 20px;
+  }
+  .leafbridge_product_modal .leafbridge_product_modal_image img {
+    padding-bottom: 0px;
+  }
+  .leafbridge_product_modal .leafbridge_product_modal_image {
+    max-height: 20vh;
+  }
+  .wizard_prods_inner .wizard_prods_categories .lb_prod_filter_attrs {
+    max-height: 65vh;
+    overflow-x: scroll;
+  }
+}
+
+@media (min-width: 768px) {
+  .list .leafbridge_product_card .leafbridge_product_a {
+    display: none;
+  }
+
+  .list .leafbridge_product_modal_outer_bg {
+    display: none;
+  }
+
+  .list .leafbridge_product_card .open_prod_modal {
+    display: none;
+  }
+
+  .list .leafbridge_product_modal {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: auto !important;
+    min-width: auto !important;
+    max-width: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .list .leafbridge_product_modal .leafbridge_product_modal_image {
+    background: white;
+    height: 100%;
+    align-items: center;
+    border-right: 1px solid rgba(160, 154, 142, 0.4);
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 230px;
+    min-height: 200px;
+  }
+
+  .list .leafbridge_product_modal .leafbridge_product_modal_image {
+    padding: 0px;
+  }
+
+  .list .leafbridge_product_modal_descr {
+    padding: 10px 40px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .list .leafbridge_product_modal_close {
+    display: none;
+  }
+
+  .list .leafbridge_product_modal_descr_inner {
+    display: inline-flex;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .list .leafbridge_brand_name {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 15px;
+    color: #0b2033;
+    font-weight: 400;
+    order: 1;
+  }
+
+  .list .leafbridge_product_name {
+    color: #0b2033;
+    line-height: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    order: 2;
+  }
+
+  .list .leafbridge_product_price {
+    font-size: 20px;
+    line-height: 23px;
+    color: #0b2033;
+    display: inline-flex;
+    flex-flow: column;
+    width: auto;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .list .leafbridge_product_descr {
+    display: none;
+  }
+
+  .list .leafbridge_product_modal_add_to_cart {
+    display: flex;
+    column-gap: 0;
+    align-items: center;
+    overflow: hidden;
+    opacity: 1;
+    width: 100%;
+    justify-content: right;
+  }
+  .list .leafbridge_product_modal_add_to_cart input.add_to_cart_count {
+    max-width: 100px;
+    font-family: inherit;
+    height: 100%;
+    padding: 7px 10px;
+    font-size: 15px;
+    line-height: 15px;
+    min-width: auto;
+    width: auto;
+  }
+  .list .leafbridge_product_modal_outer {
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    background: transparent;
+    z-index: 1;
+    cursor: auto;
+  }
+  .list .leafbridge_brand_details_wrapper_1 {
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+  }
+  .list .leafbridge_brand_details_wrapper_2 {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    text-align: right;
+  }
+
+  .list .leafbridge_product_modal_add_to_cart button {
+    height: 35px;
+    min-width: auto;
+    display: inline-block;
+    max-height: none;
+    line-height: 1 !important;
+    font-size: 15px;
+  }
+  .list .leafbridge_product_modal_add_to_cart select {
+    border: 1px solid #dcd7ca;
+    border-radius: 0px;
+    width: auto;
+    padding: 7px 10px;
+    font-size: 15px;
+    height: auto;
+  }
+  .list .atc_text {
+    display: none;
+  }
+
+  .list .strain_potency {
+    display: inline-flex;
+    gap: 10px;
+    font-size: inherit;
+    align-items: center;
+    justify-content: flex-start;
+    order: 3;
+  }
+
+  .list .potency_list_view {
+    display: inline-flex;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .list .potency_list_view span {
+    background: #dad7d2;
+    color: black;
+    padding: 2px 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: sans-serif;
+  }
+
+  .list .see_more_list_view_wrapper {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    order: 4;
+  }
+  .list .see_more_list_view {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: inherit;
+    color: #153f66;
+  }
+
+  .list a.see_more_list_view::after {
+    content: '\f054';
+    font-family: 'FontAwesome';
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 12px;
+    transition: ease-in-out 0.15s all 0s;
+    opacity: 0;
+    z-index: -1;
+    color: transparent;
+  }
+
+  .list a.see_more_list_view:hover::after {
+    opacity: 1;
+    color: inherit;
+    z-index: 1;
+    right: -15px;
+  }
+}
+@media (max-width: 767px) {
+  #wizard_sort_wrapper h1 {
+    margin-bottom: 20px;
+  }
+  .leafbridge_popup_box {
+    width: 90%;
+  }
+
+  .wizard_prods_inner {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+  }
+
+  .wizard_prods_inner .wizard_prods_categories ul#prods_categories {
+    display: inline-block;
+    margin: 0 0 0 0;
+  }
+
+  .wizard_prods_inner .wizard_prods_categories ul#prods_categories li {
+    margin: 0 0px 10px;
+  }
+
+  .wizard_prods_inner
+    .wizard_prods_view
+    .wizard_product_section
+    .wizard_category_products_showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .leafbridge_shop_wizard_set_delivery-modal {
+    min-width: 100%;
+    text-align: center;
+    display: flex;
+  }
+  .leafbridge_product_modal_outer .leafbridge_product_modal {
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    max-width: none;
+    overflow: hidden;
+    min-width: auto;
+    align-items: center;
+  }
+  .leafbridge_product_modal_outer
+    .leafbridge_product_modal
+    .leafbridge_product_modal_descr {
+    background: white;
+    padding: 0px 30px 30px 30px;
+  }
+
+  .leafbridge_product_modal_outer
+    .leafbridge_product_modal
+    .leafbridge_product_modal_image
+    img {
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+    padding: 30px;
+  }
+
+  .wizard_prods_inner .wizard_prods_categories {
+    position: fixed;
+    top: 50%;
+    z-index: 99;
+    width: 75%;
+  }
+  .leafbridge_popup_box {
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+  #leafbridge_order_details_wrapper .lb-order-meta {
+    display: inline-block;
+  }
+
+  .info_grid,
+  .lb_prod_single_cannabinoids .info_grid {
+    display: inline-grid;
+    grid-template-columns: 1fr !important;
+    width: 100%;
+  }
+  .sub_info_box {
+    width: 100%;
+  }
+  .sub_info_box_inner_collapse {
+    position: relative;
+    top: auto;
+    width: 100%;
+    min-width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .leafbridge_product_modal_add_to_cart {
+    display: inline-grid;
+    column-gap: 20px;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .leafbridge_product_modal_add_to_cart select {
+    width: 100%;
+  }
+  .leafbridge_product_modal_add_to_cart input.add_to_cart_count {
+    max-width: none;
+  }
+  .leafbridge_product_modal_add_to_cart button {
+    height: 100%;
+    min-width: auto;
+    height: auto;
+    border-radius: 0 !important;
+    text-transform: none !important;
+    background-color: #153f66;
+    text-decoration: none;
+    height: auto;
+    line-height: 1 !important;
+    padding: 15px;
+    border: none;
+    grid-column: span 2;
+    text-align: center;
+  }
+  .leafbridge_product_modal_add_to_cart button .btn_label {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1 !important;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+  .show_category_products_based_on_retailer
+    .wizard_prods_inner
+    .wizard_prods_view
+    .wizard_product_section
+    .wizard_category_products_showcase {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .lb_product_categories_wrapper .lb_product_categories_inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .lb_prod_single_about_brand img {
+    width: 100%;
+  }
+  .leafbridge_product_card .open_prod_modal {
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    line-height: 1;
+  }
+  .header_stiky_wizard .header_stiky_wizard_inner {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+
+  #header_stiky_wizard select,
+  button#set_floating_wizard_data {
+    font-size: 12px;
+  }
+
+  button#set_floating_wizard_data {
+    font-size: 12px;
+    height: auto;
+    width: 100%;
+    padding: 6px;
+  }
+
+  .wizard_sort_wrapper .wizard_sort_by,
+  .wizard_sort_wrapper .wizard_sort_by select {
+    width: 100%;
+  }
+
+  .leafbridge_special_products_wrapper .leafbridge_special_products_inner .leafbridge_specials_tab_wrapper .specials_tabs{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .leafbridge_special_products_wrapper .leafbridge_special_products_inner .leafbridge_specials_tab_wrapper .specials_tab_content .specials_tab_content_inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .wizard_sort_wrapper {
+    justify-content: flex-start;
+    display: inline-block;
+    text-align: left;
+  }
+  .wizard_toggle_list_grid {
+    display: none;
+  }
+
+  .age-popup-box {
+    min-width: 50vw;
+    max-width: 80vw;
+    width: 100%;
+  }
+  .leafbridge_special_products_wrapper
+    .leafbridge_special_products_inner
+    .leafbridge_specials_tab_wrapper
+    .specials_tabs_new {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .lb_pagination_wrapper .pagination_button a {
+    font-size: 12px;
+  }
+
+  .lb_pagination_wrapper .pagination_button::after {
+    font-size: 11px;
+  }
+  .lb_pagination_wrapper {
+    column-gap: 30px;
+    row-gap: 10px;
+    width: 100% !important;
+    margin-bottom: 30px !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .leafbridge_featured_products_wrapper.has_prods
+    .leafbridge_featured_products_inner
+    .leafbridge_product_card {
+    min-width: 160px;
+  }
+  .show_category_products_based_on_retailer
+    .wizard_prods_inner
+    .wizard_prods_view
+    .wizard_product_section
+    .wizard_category_products_showcase {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .list .strain_potency {
+    column-gap: 5px;
+    justify-content: space-between;
+  }
+  .leafbridge_product_modal {
+    max-height: 90vh !important;
+  }
+  .list .leafbridge_product_modal_add_to_cart button {
+    padding: 0em 1.44em !important;
+  }
+  .leafbridge_product_modal_outer
+    .leafbridge_product_modal
+    .leafbridge_product_modal_image
+    img {
+    padding: 0px !important;
+  }
+  .wizard_toggle_list_grid {
+    display: inline-block;
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+  }
+
+  .leafbridge_product_modal {
+    max-height: 90vh;
+  }
+  .list .leafbridge_product_modal_add_to_cart button {
+    padding: 0em 1.44em;
+  }
+  .leafbridge_product_modal_outer
+    .leafbridge_product_modal
+    .leafbridge_product_modal_image
+    img {
+    padding: 0px;
+  }
+  .wizard_toggle_list_grid {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .list .leafbridge_product_modal_descr_inner {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content: left;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0px;
+  }
+  .list .leafbridge_brand_details_wrapper_2 {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .list .leafbridge_product_modal_descr {
+    padding: 0px 15px 0px 15px !important;
+  }
+  .list .add_to_cart_count {
+    display: none !important;
+  }
+  .list .leafbridge_brand_name {
+    font-size: 15px;
+    margin-top: 0px;
+  }
+  .list h5.leafbridge_product_name a {
+    font-size: 16px;
+  }
+  .list .leafbridge_product_modal_add_to_cart button {
+    padding: 0em 1.44em;
+  }
+  .list .leafbridge_product_descr {
+    margin-bottom: 0 !important;
+  }
+  .list .leafbridge_strain_type_label {
+    /* position: absolute;
+    bottom: -20px;
+    left: 0; */
+  }
+  .list .leafbridge_product_modal_outer .leafbridge_product_modal {
+    height: auto !important;
+    padding: 10px 0px !important;
+  }
+  .list .leafbridge_product_modal_image img {
+    height: 110px !important;
+  }
+  .strain_potency {
+    margin-bottom: 10px;
+  }
+  .leafbridge_product_price span {
+    display: inline-block;
+    width: auto;
+    line-height: 1;
+    padding: 2px 8px;
+    background: #def2e1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: left;
+    border: 1px solid #97d7a1;
+  }
+  .leafbridge_product_price.lf-common {
+    margin-bottom: 9px;
+  }
+
+  .list .potency_list_view span {
+    font-size: 10px;
+  }
+
+  /* CSS should be applied below 480px and checked to make sure it doesn’t mess up other areas of the site! */
+
+  /* shrink product card image */
+  
+  .leafbridge_product_card img {
+      width: 100%;
+      max-width: 120px !important;
+      max-height: 120px !important;
+      object-fit: contain;
+      margin-bottom: 5px;
+      mix-blend-mode: darken;
+      border-style: none;
+  }
+  
+  /* shrink brand name */
+  
+  .leafbridge_brand_name {
+      font-size: 10px;
+      line-height: 10px;
+      margin-top: 2px;
+      margin-bottom: 0px !important;
+      color: #0b2033;
+      font-weight: 400;
+  }
+  
+  /* shrink product name */
+  
+  h5.leafbridge_product_name a {
+      font-size: 12px;
+      line-height: 0px;
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+      text-decoration: none;
+      color: rgb(31, 43, 73);
+  }
+  
+  /* shrink product name line height and shrink margin */
+  
+  h5.leafbridge_product_name {
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 0px !important;
+  }
+  
+  /* shrink label fonts */
+  
+  .leafbridge_product_price span {
+      display: inline-block;
+      width: auto;
+      line-height: 1;
+      padding: 2px 8px;
+      background: #def2e1;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      font-size: 12px;
+      text-align: left;
+      border: 01px solid #97d7a1;
+  }
+  
+  /* remove label margins */
+  
+  .leafbridge_product_price.lf-common {
+      font-size: 10px !important;
+      line-height: 23px;
+      color: #0b2033;
+      margin-bottom: 10px;
+  }
+  
+  /* remove potency card margin */
+  
+  .potency_card_view {
+      display: inline-flex;
+      row-gap: 10px;
+      font-size: 13px;
+      font-weight: bold;
+      column-gap: 2px;
+      margin-top: 0px;
+  }
+  
+  /* shrink potency card font */
+  
+  .potency_card_view span {
+      background: #dad7d2;
+      color: black;
+      padding: 2px 5px;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 8px;
+  }
+  
+  /* remove add to cart button margin */
+  
+  .lb_prod_box_add_to_cart_wrapper.leafbridge_product_modal_add_to_cart {
+      flex-direction: column;
+      display: flex;
+      margin-top: 5px;
+      align-items: flex-start;
+  }
+  
+  /* shrink cart icon on cart button */
+  
+  .lb_prod_box_add_to_cart_wrapper.leafbridge_product_modal_add_to_cart button .btn_label .btn_icon_wrapper {
+      font-size: 10px !important;
+      padding: 0;
+  }
+  
+  /* shrink add to cart button wrapper */
+  
+  /* .leafbridge_product_modal_add_to_cart {
+      display: inline-grid;
+      column-gap: 20px;
+      align-items: center !important;
+      overflow: hidden;
+      width: 100%;
+      border-radius: 5px;
+      max-width: 100px !important;
+      row-gap: 10px;
+      grid-template-columns: 1fr 1fr;
+  } */
+  
+  /* smaller font add to cart */
+  
+  .lb_prod_box_add_to_cart_wrapper span.atc_text {
+      letter-spacing: 0px;
+      font-size: 12px !important;
+  }
+  
+  /* smaller font quick view */
+  
+  .leafbridge_product_card .open_prod_modal {
+      font-size: 14px;
+      width: auto;
+      height: auto;
+      line-height: 1;
+  }
+  
+  /* set max width product card contents */
+  
+  .leafbridge_product_card .leafbridge_product_a {
+      display: flex;
+      width: -webkit-fill-available;
+      max-width: 175px !important;
+      height: 100%;
+      position: relative;
+      padding: 15px;
+      text-decoration: none;
+      color: black;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 12px !important;
+  }
+  
+  /* set max width product card wrapper */
+  
+  .leafbridge_specific_product_filter_wrapper .lb_specific_prods_slider_wrapper .lb_specific_prods_slider_inner .leafbridge_product_card {
+      min-width: auto;
+      max-width: 160px;
+  }
+  
+  /* set width product card outer */
+  
+  .leafbridge_specific_product_filter_wrapper .lb_specific_prods_slider_wrapper .lb_specific_prods_slider_inner .leafbridge_product_card {
+      display: inline-block;
+      width: 160px;
+      height: 100%;
+      position: relative;
+  }
+  
+  /* keep consistent gap between items in carousel */
+  
+  .leafbridge_specific_product_filter_wrapper .lb_specific_prods_slider_wrapper .lb_specific_prods_slider_inner .swiper-slide {
+      display: inline-block;
+      width: auto !important;
+      height: auto;
+      position: relative;
+      min-width: auto;
+      max-width: none;
+      /* margin-right: auto !important; */
+  }
+  
+  /* shrink quick view font size */
+  
+  .leafbridge_product_card .open_prod_modal {
+      font-size: 12px;
+      width: auto;
+      height: auto;
+      line-height: 1;
+  }
+
+  /* shrink product boxes in shop and similar pages */
+  .wizard_prods_inner .wizard_prods_view .wizard_product_section .wizard_category_products_showcase {
+    grid-template-columns: 1fr 1fr !important;
+    row-gap: 8px !important;
+    column-gap: 8px !important;
+    padding-right: 0px;
+    padding-left: 0;
+  }
+  
+  /* set gap between labels */
+  .list .leafbridge_product_modal_outer .price_disc_list {
+    display: flex;
+    row-gap: 5px;
+  }
+}

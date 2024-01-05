@@ -1,0 +1,1293 @@
+/**
+ * All of the CSS for admin-specific functionality should be
+ * included in this file.
+ */
+
+:root {
+  --color-primary: #153f66;
+  --color-accent: #27cc87;
+  --color-white: #fff;
+  --color-black: 000;
+  --color-header: #153f66;
+  --color-nav: #262932;
+  --color-body-text: #3c3b59;
+  --color-desc-text: #6e6d99;
+  --color-panel-heading: #153f66;
+  --color-secondary-hover: rgba(0, 115, 170, 0.15);
+  --color-secondary-focus: rgba(0, 115, 170, 0.4);
+  --color-divider: #cad8ec;
+  --color-divider-light: rgba(202, 216, 236, 0.5);
+  --color-progress-bg: #57645e;
+  --color-modal-background: rgba(47, 58, 74, 0.8);
+  --spacer-none: 0px;
+  --spacer-xs: 8px;
+  --spacer-sm: 16px;
+  --spacer-md: 24px;
+  --spacer-lg: 32px;
+  --spacer-xl: 40px;
+  --spacer-2xl: 48px;
+  --spacer-3xl: 56px;
+  --spacer-4xl: 64px;
+  --spacer-5xl: 72px;
+  --spacer-6xl: 80px;
+  --panel-border-radius: 6px;
+  --panel-shadow: 0px 2px 1px rgba(39, 45, 77, 0.05), 0px 2px 8px rgba(187, 187, 187, 0.2);
+  --input-shadow: 0px 2px 2px rgba(182, 181, 204, 0.25);
+}
+
+.leafbridge-admin-settings {
+  max-width: 85%;
+}
+#lb-custom-menu-name {
+  width: 100%;
+}
+.lb-custom-menu-name {
+  display: none;
+}
+.leafbridge-admin-col-xs-12 {
+  width: 100%;
+}
+.lf-special-names {
+  /*display: none !important;*/
+}
+.lb-cron-notice {
+  color: green;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+ul.select2-results__options li {
+  padding: 5px 10px;
+}
+.select2-search--dropdown {
+  padding: 10px 10px !important;
+}
+.leafbridge-admin-block {
+  position: relative;
+  margin: 0 auto 0.5rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0px rgba(200, 215, 225, 0.25), 0 1px 2px #e9eff3;
+}
+
+.leafbridge-admin-block-content {
+  margin: 0 -1rem;
+  padding: 0 1.5rem;
+}
+
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list {
+  margin: 0 -1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list > li {
+  display: block;
+  min-height: 44px;
+  padding: 0 1.5rem;
+  margin: 0;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list.leafbridge-admin-block-list-horizontal.leafbridge-admin-block-list-nowrap {
+  overflow-y: auto;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list > li > :first-child {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  min-width: 0;
+}
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list.leafbridge-admin-block-list-horizontal {
+  box-sizing: border-box;
+  margin-top: -1px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list.leafbridge-admin-block-list-horizontal.leafbridge-admin-block-list-nowrap > li {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list.leafbridge-admin-block-list-horizontal > li.leafbridge-form-panel {
+  -webkit-flex-basis: 70%;
+  flex-basis: 70%;
+}
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list.leafbridge-admin-block-list-horizontal > li.leafbridge-details-panel {
+  -webkit-flex-basis: 30%;
+  flex-basis: 30%;
+}
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list.leafbridge-admin-block-list-horizontal > li {
+  border-left: 1px solid #e2e2e2;
+}
+.leafbridge-admin-status-detail form {
+  width: 100%;
+}
+
+.leafbridge-admin-status-detail {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin: 0 -1rem;
+  padding: 1rem;
+}
+
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list > li > :first-child {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.leafbridge-admin-status-detail {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin: 0 -1rem;
+  padding: 1rem;
+}
+
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list > li > :first-child {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  min-width: 0;
+}
+.leafbridge-admin-block-labeled-value-label {
+  font-size: 15px;
+}
+
+.leafbridge-admin-store-status-bg-active {
+  background: #26a853;
+  color: #fff;
+}
+.leafbridge-admin-store-status-bg-inactive {
+  background: #d63638;
+  color: #fff;
+}
+.leafbridge-admin-block-list.leafbridge-admin-block-list-horizontal.leafbridge-admin-store-status-bg-setup {
+  background: #153f66;
+  color: #fff;
+}
+.leafbridge-admin-block-list.leafbridge-admin-block-list-horizontal.leafbridge-admin-store-ui-settings-bg {
+  background: #153f66;
+  color: #fff;
+}
+
+.leafbridge-admin-block-list-item-header {
+  border-bottom: 1px solid #eee;
+}
+
+.leafbridge-admin-setup-store {
+  align-items: flex-start;
+}
+
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list.leafbridge-admin-block-list-horizontal > li.leafbridge-form-panel.leafbridge-admin-setup-store-panel {
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+}
+
+.leafbridge-admin-setup-store-panel p.leafbridge-woonotice {
+  color: #d21515;
+}
+
+/* ******* admin product styles **************** */
+.leafbridge_product_meta_form-field {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.leafbridge_product_meta_form-field label {
+  font-size: 12px;
+  width: 190px;
+}
+.leafbridge_product_meta_form-field input {
+  width: 400px;
+}
+
+/* plugin setting page retailer selection styles */
+.lb-admin-select-stores-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding-top: 20px;
+  padding-left: 1px;
+  margin-bottom: 40px;
+  max-height: 632px;
+  overflow-y: auto;
+}
+.lb-card {
+  background: #fff;
+  color: #666;
+  height: auto;
+  width: 92%;
+  border-radius: 12px;
+  transition: 0.15s;
+  -webkit-user-select: none;
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+  flex: 1 1 30%;
+  align-items: flex-start;
+  max-width: 364px;
+  margin-bottom: 2%;
+  padding-bottom: 3%;
+}
+.quick-sync {
+  margin-top: 20px;
+  padding: 5px 20px;
+  background-color: #259968;
+  border: 0;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lb-card:nth-child(odd) .lb-card__body-cover-image {
+}
+.lb-card:nth-child(even) .lb-card__body-cover-image {
+}
+.lb-card:nth-child(odd) .lb-card__body-cover-image {
+}
+.lb-card:nth-child(even) .lb-card__body-cover-image {
+}
+
+.lb-card__input:checked ~ .lb-card__body {
+  box-shadow: 0 0 0 3px #ccc;
+}
+
+svg.bi.bi-trash {
+  width: 20px;
+  height: 20px;
+  background-color: #ff0800;
+  padding: 2px;
+  border-radius: 5px;
+  fill: #fff;
+}
+.lb-remove-item {
+  position: absolute;
+  width: auto;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.lb-card__input:checked ~ .lb-card__body .lb-card__body-cover:after {
+}
+.lb-card__input:checked ~ .lb-card__body .lb-card__body-cover-image {
+}
+.lb-card__input:disabled ~ .lb-card__body {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.lb-card__input:disabled ~ .lb-card__body:active {
+  scale: 1;
+}
+.lb-card__body {
+  display: flex;
+  background: #fff;
+  width: 100%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  -moz-box-shadow: 1px 1px 6px 2px #ececec;
+  -webkit-box-shadow: 1px 1px 6px 2px #ececec;
+  box-shadow: 1px 1px 6px 2px #ececec;
+  transition: transform 0.15s, box-shadow 0.15s;
+  transform: scale(1) translateZ(0);
+  padding: 15px 10px 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  vertical-align: top;
+  position: relative;
+}
+.lb-card__body:hover {
+  /*transform: scale(1.1) translateZ(0);*/
+  box-shadow: 1px 1px 6px 5px #ececec;
+}
+
+.lb-card__body:active {
+}
+.lb-card__body-cover {
+  border: 5px 5px 0 0;
+  width: 150px;
+  position: relative;
+  overflow: hidden;
+  text-align: x;
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lb-card__body-cover-image {
+  /* width: 100px; */
+  height: 100px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  /* -webkit-clip-path: polygon(0% 0%, 100% 0%, var(--x-y1, 100% 90%), var(--x-y2, 67% 83%), var(--x-y3, 33% 90%), var(--x-y4, 0% 85%)); */
+  /* clip-path: polygon(0% 0%, 100% 0%, var(--x-y1, 100% 90%), var(--x-y2, 67% 83%), var(--x-y3, 33% 90%), var(--x-y4, 0% 85%)); */
+}
+
+.lb-card__body-header {
+  background: #fff;
+  padding: 0 10px 10px 10px;
+  text-align: center;
+  width: 300px;
+}
+.lb-card__body-header-title {
+  color: #3c3b3b;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.lb-card__body-header-subtitle {
+  color: #000;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 0;
+}
+.lb-card-details {
+  margin: 10px 0px 0px;
+  text-align: center;
+}
+.lb-card-details span {
+  padding: 2px 5px;
+  background: #e0f0ff;
+  border: 1px solid #153f66;
+  border-radius: 3px;
+  color: #0b2033;
+  margin-bottom: 7px;
+  /* display: block; */
+  text-align: left;
+  width: 100px;
+  margin-right: 10px;
+}
+.lb-card__body-cover-checkbox {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* checkbox */
+.lb-card__body-cover-checkbox .lb-form-control {
+  font-size: 2rem;
+}
+
+.lb-form-control + .lb-form-control {
+  margin-top: 1em;
+}
+
+.lb-form-control--disabled {
+  color: #959495;
+  cursor: not-allowed;
+}
+
+.lb-card__body-cover-checkbox input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font-size: 20px;
+  color: #666;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1px solid #666;
+  -moz-border-radius: 0.15em;
+  -webkit-border-radius: 0.15em;
+  border-radius: 0.15em;
+  -moz-transform: translateY(-0.075em);
+  -webkit-transform: translateY(-0.075em);
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+.lb-card__body-cover-checkbox input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform-origin: bottom left;
+  -moz-transition: 120ms transform ease-in-out;
+  -webkit-transition: 120ms transform ease-in-out;
+  transition: 120ms transform ease-in-out;
+  -moz-box-shadow: inset 1em 1em #eee;
+  -webkit-box-shadow: inset 1em 1em #eee;
+  box-shadow: inset 1em 1em #eee;
+  /* Windows High Contrast Mode */
+}
+.lb-card__body-cover-checkbox input[type="checkbox"]:checked {
+  background: #26a853;
+}
+.lb-card__body-cover-checkbox input[type="checkbox"]:checked::before {
+  transform: scale(1);
+  content: "";
+  margin: 0;
+}
+
+.lb-card__body-cover-checkbox input[type="checkbox"]:focus {
+  /*outline: max(2px, 0.15em) solid #888;
+  outline-offset: max(2px, 0.15em);*/
+}
+
+.lb-card__body-cover-checkbox input[type="checkbox"]:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.lb-admin-select-retailer-product ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lb-admin-select-retailer-product li {
+  list-style: none;
+  font-weight: bold;
+  margin-right: 20px;
+  /* padding-right: 20px; */
+  /* border: 1px solid #ccc; */
+  padding: 5px 15px;
+  background: #2271b1;
+  text-align: center;
+}
+.lb-admin-select-retailer-product li a {
+  /* padding-right: 20px; */
+  color: #fff;
+  text-decoration: none;
+  /* text-align: center; */
+}
+.leafbridge-admin-block .leafbridge-admin-block-content .leafbridge-admin-block-list > li.leafbridge-details-panel {
+  align-items: flex-start;
+  padding-top: 10px;
+}
+.leafbridge-form-panel textarea {
+  width: 100%;
+  resize: none;
+  height: 110px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.leafbridge-config-ui-panel .leafbridge-admin-status-detail.leafbridge-admin-setup-store {
+  width: 100%;
+}
+.leafbridge-config-ui-panel form {
+  width: 100%;
+}
+.leafbridge-config-ui-panel .lb-admin-select-stores-wrapper form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.leafbridge-config-ui-panel .lb-admin-select-stores-wrapper form .leafbridge-config-ui-left {
+  width: 60%;
+}
+.leafbridge-config-ui-panel .lb-admin-select-stores-wrapper form .leafbridge-config-ui-right {
+  width: 40%;
+  padding-top: 20px;
+}
+.leafbridge-config-ui-panel .lb-admin-select-stores-wrapper form .leafbridge-config-ui-right img {
+  height: 180px;
+}
+
+.leafbridge-admin-item-settings-wrapper summary::-webkit-details-marker {
+  display: none;
+}
+
+.leafbridge-admin-item-settings-wrapper summary::after {
+  content: " ►";
+  position: absolute;
+  right: 10px;
+}
+details[open].leafbridge-admin-item-settings-wrapper summary::after {
+  content: " ▼";
+  position: absolute;
+  right: 10px;
+}
+.leafbridge-admin-item-settings-wrapper summary {
+  background: #153f66;
+  color: #fff;
+  display: flex;
+  padding: 10px 20px;
+  position: relative;
+  cursor: pointer;
+}
+.leafbridge-admin-item-settings-wrapper .leafbridge-admin-block-labeled-value-label {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.leafbridge-admin-item-settings-wrapper .lb-admin-select-stores-wrapper {
+  background: #fff;
+  padding: 20px;
+  width: auto;
+}
+
+.leafbridge-config-ui-left-inner {
+  margin-bottom: 40px;
+}
+.leafbridge-config-ui-left-inner h1 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+.leafbridge-config-ui-left-inner .form-table {
+}
+.lb-admin-select-stores-wrapper form {
+  width: 100%;
+}
+.leafbridge-config-ui-left {
+  width: 60%;
+  float: left;
+}
+.leafbridge-config-ui-right {
+  width: 40%;
+  float: left;
+  padding-top: 50px;
+}
+/*.leafbridge-config-ui-right .lb-card__body-cover-image {
+	max-width: 100%;
+	height: 230px; 
+	border: 1px solid #eee;
+}*/
+.leafbridge-config-ui-right .lb-card__body-cover-image {
+  max-width: 100%;
+  height: 230px;
+  border: 1px solid #eee;
+  margin-top: 120px;
+}
+.leafbridge-config-ui-footer {
+  width: 100%;
+  clear: both;
+}
+
+.leafbridge_product_meta_form-field {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.leafbridge-settings-row select {
+  width: 100%;
+}
+.leafbridge-settings-row select,
+.leafbridge-settings-row input[type="text"] {
+  width: 450px;
+  max-width: 450px;
+}
+#leafbridge-settings-modal {
+  position: fixed;
+  display: none;
+  width: 99.9%;
+  height: 100%;
+  background: #00000042;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  top: 0;
+  backdrop-filter: blur(3px);
+}
+.leafbridge-settings-modal-inner {
+  width: 650px;
+  margin: 80px auto;
+  background: #fff;
+  max-width: 80%;
+  display: flex;
+  align-content: center;
+  max-height: 550px;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px #00000078;
+}
+.leafbridge-settings-modal-warpper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+  /* align-content: flex-start; */
+  height: 80%;
+  padding-top: 70px;
+  padding: 70px 5%;
+}
+.leafbridge-settings-modal-warpper ul {
+  max-height: 320px;
+  overflow-y: auto;
+}
+.leafbridge-settings-modal-warpper h3 {
+  font-size: 20px;
+}
+.leafbridge-settings-modal-warpper li {
+  font-size: 1.1em;
+  list-style: none;
+  display: table;
+  /* justify-content: flex-start; */
+  align-items: center;
+  text-align: left;
+  margin-bottom: 20px;
+  /* line-height: 20px; */
+  vertical-align: middle;
+  /* flex-wrap: wrap; */
+  /* flex-basis: max-content; */
+  /* margin: 0 auto; */
+}
+.leafbridge-settings-modal-warpper img.lf-admin-loading-gif {
+  width: 40px;
+  display: block;
+  margin: 0 auto;
+}
+.leafbridge-settings-modal-warpper li img {
+  width: 15px;
+  margin-left: 10px;
+}
+#leafbridge-settings-modal-close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: #102f4c;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  /* border-radius: 50%; */
+  font-size: 11px;
+  display: none;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.leafbridge-config-ui-content table select,
+.leafbridge-config-ui-content table input[type="text"],
+.leafbridge-config-ui-content table textarea {
+  width: 90%;
+  max-width: 90%;
+}
+
+div.leafbridge-config-ui-left-inner div.leafbridge-config-ui-content table.form-table tbody tr.leafbridge-settings-row td {
+  width: 70%;
+}
+.lf-readonly-txt {
+  border: none !important;
+  pointer-events: none;
+}
+.lf-readonly-txt:focus {
+  border: none !important;
+  pointer-events: none;
+}
+
+/************************** documentation page styles ************ */
+.lf-action-wrap {
+  margin: 0 !important;
+  border: 0 !important;
+  background-color: #f0f0f1;
+  box-shadow: none;
+  padding: var(--spacer-sm) var(--spacer-none);
+  /*padding-bottom: 120px;*/
+}
+.lf-ui-sidebar-wrapper {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 48px;
+}
+.lf-inside {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  min-width: 640px;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacer-lg);
+}
+.lf-panel {
+  background: var(--color-white);
+  box-shadow: var(--panel-shadow);
+  border-radius: var(--panel-border-radius);
+}
+.lf-panel-header {
+  height: 56px;
+  padding: 0 var(--spacer-lg) !important;
+  border-bottom: 1px solid var(--color-divider);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #153f66;
+  border-radius: 5px 5px 0px 0px;
+}
+.lf-panel-header h3 {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  line-height: 1;
+  padding: 0 !important;
+}
+.lf-panel-content {
+  padding: var(--spacer-lg);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacer-lg);
+}
+.lf-row {
+  display: flex;
+  column-gap: var(--spacer-lg);
+}
+.lf-input-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacer-xs);
+}
+.lf-label {
+  font-size: 14px;
+}
+.lf-textarea[readonly] {
+  width: 100%;
+  height: 480px;
+  font-family: Menlo, Monaco, monospace;
+  font-size: 12px;
+  margin: 0;
+  background: var(--color-header);
+  color: var(--color-white);
+  padding: var(--spacer-sm);
+  border-radius: var(--panel-border-radius);
+  border: none;
+  box-shadow: var(--input-shadow);
+}
+.lf-button {
+  font-size: 15px !important;
+  letter-spacing: 0.4px !important;
+  border-radius: var(--panel-border-radius) !important;
+  font-weight: 500 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 0 var(--spacer-md) !important;
+  column-gap: 8px;
+  margin: 0 !important;
+}
+.lf-button-sm {
+  height: var(--spacer-xl) !important;
+  padding: 0 var(--spacer-sm) !important;
+  font-size: 14px !important;
+  border-radius: 4px !important;
+  margin-right: 10px !important;
+}
+.lf-button-secondary {
+  color: var(--color-primary) !important;
+  background: 0 0 !important;
+  border: 1px solid var(--color-primary) !important;
+}
+p.lf-submit {
+  margin: 0;
+  padding: 0;
+}
+.lf-input-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacer-xs);
+}
+.lf-full-width {
+  width: 100%;
+}
+.lf-panel-content ul {
+  padding-left: 13px;
+}
+.lf-panel-content li {
+  list-style: square;
+}
+.lf-panel-content table tr,
+.lf-panel-content table tr td {
+  vertical-align: baseline;
+  padding-bottom: 10px;
+}
+.lf-panel-content table tr td:first-child {
+  min-width: 190px;
+  text-align: right;
+  padding-right: 20px;
+}
+.leafbridge-settings-row textarea {
+  width: 100%;
+  min-height: 120px;
+  max-width: 100%;
+}
+.lf-activation-notice-panel {
+}
+.form-table .leafbridge-settings-row th,
+.form-table .leafbridge-settings-row td {
+  padding-top: 0;
+}
+.lf-activation-notice-panel p {
+  padding: 0;
+  margin: 0;
+}
+.lf-activation-notice-panel .notice.notice-success,
+.lf-activation-notice-panel .notice.notice-error {
+  margin-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.lf-server-status {
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 4px;
+  width: 12px;
+  height: 12px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.lf-server-success {
+  background: #97d000;
+}
+.lf-server-fail {
+  background: #ef5555;
+}
+.lf-panel-content li .lf-server-status {
+  margin-top: 3px;
+}
+
+.leafbridge-settings-modal-warpper li i {
+  color: #0dbf0d;
+}
+
+.toplevel_page_leafbridge .notice {
+  max-width: 1250px;
+  margin-left: 0;
+}
+.leafbridge-config-ui-content.lf-page-config-box {
+  max-width: 740px;
+}
+.lf-panel-content table tr.lf-w-full td:first-child {
+  text-align: left;
+  padding-right: 0;
+  padding-left: 0;
+}
+.lf-panel-content table tr.lf-w-full textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 350px;
+}
+
+/* Toggle switch */
+.lb-switch {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 26px;
+}
+
+.lb-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.lb-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.lb-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .lb-slider {
+  background-color: #153f66;
+}
+
+input:focus + .lb-slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .lb-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.lb-slider.lb-round {
+  border-radius: 34px;
+}
+
+.lb-slider.lb-round:before {
+  border-radius: 50%;
+}
+
+.leafbridge-config-ui-log {
+  max-width: 550px;
+  margin-top: 30px;
+}
+.lf-d-none {
+  display: none;
+}
+.lf-error-email-required {
+  display: block;
+  width: 100%;
+  visibility: hidden;
+  font-size: 12px;
+  color: red;
+}
+.leafbridge_custom_css_container,
+#leafbridge-config-ui-custom-css {
+  max-width: 100%;
+  min-height: 350px;
+}
+
+.leafbridge_custom_css_container .ace_editor.ace-tm {
+  border: 1px solid #e6e6e6;
+}
+.leafbridge-woonotice {
+  color: red;
+  font-size: 15px;
+}
+
+/* ************ */
+#leafbridge-info-modal-close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99999;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background: #102f4c;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+  -moz-border-radius: 0px 5px 0px 0px;
+  -webkit-border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.lf-info-modal-wrap {
+  position: fixed;
+  top: 0;
+  left: -25px;
+  right: -29px;
+  bottom: 0;
+  background: #0000004d;
+  width: 103%;
+  height: 100%;
+  z-index: 98;
+  display: none;
+}
+.lf-info-modal-inner {
+  max-width: 80%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 130px auto;
+  -moz-box-shadow: 0px 10px 10px #00000078;
+  -webkit-box-shadow: 0px 10px 10px #00000078;
+  box-shadow: 0px 10px 10px #00000078;
+  width: 650px;
+  position: relative;
+}
+.lf-info-modal-item-inner {
+  border: 1px solid #eee;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #ececec;
+  box-shadow: 1px 3px 3px #c6c6c6;
+}
+.lf-info-modal-item-inner p {
+  margin-top: 0;
+}
+.mx-100 {
+  max-width: 100%;
+}
+.lf-info-modal-inside {
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.lf-admin-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lf-admin-col-3 {
+  max-width: 23%;
+  flex: 23%;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+.lf-admin-col-3 label {
+  font-weight: 700;
+}
+.lf-admin-col-3 select,
+.lf-admin-col-3 input[type="number"] {
+  width: 100%;
+}
+.lf-admin-shortcode-output code {
+  width: 96%;
+  height: 100px;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 2%;
+}
+.lf-admin-shortcode-output {
+  max-width: 100%;
+  flex: 100%;
+  position: relative;
+}
+.lf-admin-shortcode-output span {
+  position: absolute;
+  right: 7px;
+  display: none;
+  cursor: pointer;
+  font-weight: 600;
+  top: 4px;
+  color: #0058ff;
+}
+.lf-admin-retailer-shortcode-output code {
+  width: 96%;
+  height: 100px;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 2%;
+}
+.lf-admin-retailer-details-shortcode-output code {
+  width: 96%;
+  height: 100px;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 2%;
+}
+
+.lf-admin-retailer-details-shortcode-output {
+  max-width: 100%;
+  flex: 100%;
+  position: relative;
+}
+.lf-admin-retailer-details-shortcode-output span {
+  position: absolute;
+  right: 7px;
+  display: none;
+  cursor: pointer;
+  font-weight: 600;
+  top: 4px;
+  color: #0058ff;
+}
+.lf-admin-retailer-shortcode-output {
+  max-width: 100%;
+  flex: 100%;
+  position: relative;
+}
+.lf-admin-retailer-shortcode-output span {
+  position: absolute;
+  right: 7px;
+  display: none;
+  cursor: pointer;
+  font-weight: 600;
+  top: 4px;
+  color: #0058ff;
+}
+.lf-special-names {
+  display: none;
+}
+
+.lb-tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.lb-tooltip .lb-right {
+  min-width: 200px;
+  max-width: 400px;
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  transform: translate(0, -50%);
+  padding: 0;
+  color: #eeeeee;
+  background-color: #444444;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.lb-tooltip:hover .lb-right {
+  visibility: visible;
+  opacity: 1;
+}
+
+.lb-tooltip .lb-text-content {
+  padding: 10px 20px;
+}
+
+.lb-tooltip .lb-right i {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+}
+.lb-tooltip .lb-right i::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%) rotate(-45deg);
+  background-color: #444444;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.lb-retailer-custom-name {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  column-gap: 10px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.lb-settings-retailer-submit {
+  background: #2271b1;
+  border-radius: 3px;
+  color: #fff;
+  outline: none;
+  border: 0;
+  padding: 5px 9px;
+  cursor: pointer;
+  height: 30px;
+}
+/* ************** */
+
+.lf-ui-sidebar-wrapper .select2-container .select2-selection--single {
+  height: 30px;
+}
+.lf-ui-sidebar-wrapper .select2-container {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 960px) {
+  .leafbridge-admin-settings {
+    max-width: 97%;
+  }
+  .lf-inside {
+    min-width: 100%;
+  }
+  .lf-panel {
+    width: 100%;
+  }
+  .lb-admin-select-stores-wrapper {
+    display: block;
+  }
+  .lb-card {
+    margin-bottom: 25px;
+    margin-right: 0;
+    width: 100%;
+  }
+  div.leafbridge-config-ui-left-inner div.leafbridge-config-ui-content table.form-table tbody tr.leafbridge-settings-row td {
+    width: 100%;
+  }
+  .leafbridge-config-ui-content table select,
+  .leafbridge-config-ui-content table input[type="text"],
+  .leafbridge-config-ui-content table textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+  .leafbridge-config-ui-left {
+    width: 100%;
+  }
+  .leafbridge-config-ui-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lf-admin-col-3 {
+    max-width: 30%;
+    flex: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lf-admin-col-3 {
+    max-width: 100%;
+    flex: 100%;
+    padding-right: 0;
+  }
+}

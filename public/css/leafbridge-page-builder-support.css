@@ -1,0 +1,100 @@
+/* Divi and Elementor Editor Related CSS*/
+.et-fb #popup_container,
+.et-fb #header_stiky_wizard,
+.et-fb #age-popup-box-overlay,
+.et-fb .leafbridge_specific_product_filter_wrapper,
+.et-fb .lb_product_categories_wrapper,
+.et-fb .leafbridge_shop_wizard_wrapper,
+.et-fb .leafbridge_order_details_wrapper,
+.et-fb #loading_animation,
+.et-fb .leafbridge_featured_products_wrapper,
+.et-fb .leafbridge_special_products_wrapper,
+.et-fb .retailer_based_store,
+
+
+.e-preview--show-hidden-elements #popup_container,
+.e-preview--show-hidden-elements #header_stiky_wizard,
+.e-preview--show-hidden-elements #age-popup-box-overlay,
+.e-preview--show-hidden-elements .lb_product_categories_wrapper,
+.e-preview--show-hidden-elements .leafbridge_shop_wizard_wrapper,
+.e-preview--show-hidden-elements .retailer_based_store,
+.e-preview--show-hidden-elements .leafbridge_order_details_wrapper,
+.e-preview--show-hidden-elements #loading_animation,
+.e-preview--show-hidden-elements .leafbridge_featured_products_wrapper,
+.e-preview--show-hidden-elements .leafbridge_special_products_wrapper,
+.e-preview--show-hidden-elements .leafbridge_specific_product_filter_wrapper {
+   display: none !important;
+}
+
+/* Elementor Editor Related Styles */
+.elementor-page #page div#product_collection input[type=text],
+.elementor-page #page div#product_collection input[type=number]{
+    border-width:1px !important;
+    border-color: #dcd7ca !important;
+    margin-right:0px !important;
+}
+.elementor-page .owl-prev,
+.elementor-page .owl-next {
+   background-color: transparent !important;
+   color: #000000 !important;
+}
+
+
+.elementor-page .site .button:focus,
+.elementor-page button:focus,
+.elementor-page input[type=submit]:focus,
+.elementor-page input[type=reset]:focus,
+.elementor-page .wp-block-search .wp-block-search__button:focus,
+.elementor-page .wp-block-button .wp-block-button__link:focus,
+.elementor-page .wp-block-file a.wp-block-file__button:focus,
+.elementor-page .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button),
+.elementor-page .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) img {
+   outline: none !important;
+}
+
+
+.elementor-page #header_stiky_wizard select {
+   padding-right: 30px;
+}
+
+
+.elementor-page .specials_filter_attr_title {
+   background-color: transparent !important;
+   color: #000000 !important;
+   border: none !important;
+}
+
+
+.elementor-page .specials_filter_attr_box>ul {
+   padding-left: 0px !important;
+}
+
+
+.elementor-page .specials_filter_attr_box>ul>li {
+   padding-bottom: 5px !important;
+   padding-left: 5px !important;
+}
+
+/* Divi Editor Related Styles */
+/* .et_divi_theme .wizard_prods_inner .wizard_prods_view .wizard_product_section .wizard_category_products_showcase.grid {
+   grid-template-columns: 1fr 1fr 1fr;
+} */
+
+
+.et_divi_theme .specials_filter_attr_title {
+   background-color: transparent !important;
+   color: #000000 !important;
+   border: none !important;
+}
+
+
+.et_divi_theme .specials_filter_attr_box>ul {
+   padding-left: 0px !important;
+   padding-bottom: 0 !important;
+}
+
+
+.et_divi_theme .specials_filter_attr_box>ul>li {
+   padding-bottom: 5px !important;
+   padding-left: 5px !important;
+}
